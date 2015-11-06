@@ -16,7 +16,7 @@ for j in `ls $file1`; do
                     value=`sed -n '/<fields/,/<\/fields/p' "$file1/$j"`
 					#echo $value >> newobj.object
 					echo "welcome"
-					echo ' '$location'i \'$value'\ ' "$file2/$j"
+					echo ' '$location'i \$value\ ' "$file2/$j"
                                 #sed -i ''$location'i ${value}' "$file2/$j"
                                sed -i ''$location'i \'$value'\' "$file2/$j"
                                echo $j
