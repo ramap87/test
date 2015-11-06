@@ -14,7 +14,9 @@ for j in `ls $file1`; do
                                 #echo "line number  of file2 $location"
                                 sed -i '/<fields>/, /<\/fields>/ d ' "$file2/$j"
                     value=`sed -n '/<fields/,/<\/fields/p' "$file1/$j"`
-					echo "one"+$value >> newobj.object
+					#echo $value >> newobj.object
+					echo "welcome"
+					echo ' "$location"i \"$value"\ ' "$file2/$j"
                                 #sed -i ''"$location"'i ${value}' "$file2/$j"
                                # sed -i ' "$location"i \"$value"\ ' "$file2/$j"
                                echo $j
