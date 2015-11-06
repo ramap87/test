@@ -19,7 +19,7 @@ for j in `ls $file1`; do
 					echo ' '$location'i \$value\ ' "$file2/$j"
                                 #sed -i ''$location'i ${value}' "$file2/$j"
                          #      sed -i '37i \'$value'\' "$file2/$j"
-						 sed -i '37ar newobj.object' "$file2/$j"
+						 sed -i '37r newobj.object' "$file2/$j"
 						
                                echo $j
                 fi
