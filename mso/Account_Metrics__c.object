@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFA - ITR1 - Created By / Date: Surendar Reddy / 03/16/2015.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AccountId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFA - ITR1 - Created By / Date: Surendar Reddy / 03/16/2015.</description>
+        <externalId>false</externalId>
+        <label>AccountId</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Metrics</relationshipLabel>
+        <relationshipName>Account_Metrics</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AvgRedMUScore__c</fullName>
+        <description>SFA - ITR3 - Average  Red Score for all Market Unit for the selected Outlets</description>
+        <externalId>false</externalId>
+        <label>Avg Red MU Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REDAvgScore1Date__c</fullName>
+        <description>SFA - ITR3 - REDAvgScore1 Date</description>
+        <externalId>false</externalId>
+        <label>RED AvgScore 1 Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>REDAvgScore1__c</fullName>
+        <description>SFA - ITR3 - REDAvgScore1</description>
+        <externalId>false</externalId>
+        <label>RED AvgScore 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REDAvgScore2Date__c</fullName>
+        <description>SFA - ITR3 - REDAvgScore2 Date</description>
+        <externalId>false</externalId>
+        <label>RED AvgScore 2 Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>REDAvgScore2__c</fullName>
+        <description>SFA - ITR3 - REDAvgScore2</description>
+        <externalId>false</externalId>
+        <label>RED AvgScore 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REDAvgScore3Date__c</fullName>
+        <description>SFA - ITR3 - REDAvgScore3 Date</description>
+        <externalId>false</externalId>
+        <label>RED AvgScore 3 Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RedAvgScore3__c</fullName>
+        <description>SFA - ITR3 - RedAvgScore3</description>
+        <externalId>false</externalId>
+        <label>Red AvgScore 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RevenueMTD__c</fullName>
+        <description>SFA - ITR3 - holds  RevenueMTD value</description>
+        <externalId>false</externalId>
+        <label>Revenue MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RevenueQTD__c</fullName>
+        <description>SFA - ITR3 - Revenue value QTD</description>
+        <externalId>false</externalId>
+        <label>Revenue QTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RevenueTrendMTD__c</fullName>
+        <description>SFA - ITR3 - Revenue Trend MTD</description>
+        <externalId>false</externalId>
+        <label>Revenue Trend MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RevenueTrendQTD__c</fullName>
+        <description>SFA - ITR3 - RevenueTrend_QTD</description>
+        <externalId>false</externalId>
+        <label>Revenue Trend QTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RevenueTrendYTD__c</fullName>
+        <description>SFA - ITR3 - RevenueTrend YTD</description>
+        <externalId>false</externalId>
+        <label>Revenue Trend YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RevenueYTD__c</fullName>
+        <description>SFA - ITR3 - Revenue YTD</description>
+        <externalId>false</externalId>
+        <label>Revenue YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalTransactionsMTD__c</fullName>
+        <description>SFA - ITR3 - Transactions of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Transactions MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalTransactionsQTD__c</fullName>
+        <description>SFA - ITR3 - Transactions of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Transactions QTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalTransactionsTrendMTD__c</fullName>
+        <description>SFA - ITR3 - Total Transactions Trend</description>
+        <externalId>false</externalId>
+        <label>Total Transactions Trend MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalTransactionsTrendQTD__c</fullName>
+        <description>SFA - ITR3 - Total Transactions Trend</description>
+        <externalId>false</externalId>
+        <label>Total Transactions Trend QTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalTransactionsTrendYTD__c</fullName>
+        <description>SFA - ITR3 - Total Transactions Trend</description>
+        <externalId>false</externalId>
+        <label>Total Transactions Trend YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalTransactionsYTD__c</fullName>
+        <description>SFA - ITR3 - Transactions of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Transactions YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalVolumeMTD__c</fullName>
+        <description>SFA - ITR3 - Volume of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Volume MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalVolumeQTD__c</fullName>
+        <description>SFA - ITR3 - Volume of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Volume QTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalVolumeTrendMTD__c</fullName>
+        <description>SFA - ITR3 - Trend Volume of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Volume Trend MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalVolumeTrendQTD__c</fullName>
+        <description>SFA - ITR3 - Trend Volume of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Volume Trend QTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalVolumeTrendYTD__c</fullName>
+        <description>SFA - ITR3 - Trend Volume of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Volume Trend YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalVolumeYTD__c</fullName>
+        <description>SFA - ITR3 - Volume of (Still + Sparkling)</description>
+        <externalId>false</externalId>
+        <label>Total Volume YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsMTDSparklingTrend__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions MTD Sparkling Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsMTDSparkling__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions MTD Sparkling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsMTDStillTrend__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions MTD Still Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsMTDStill__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu/ 14/05/2015. - Transactions_MTD_Still</description>
+        <externalId>false</externalId>
+        <label>Transactions MTD Still</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsQTDSparklingTrend__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions QTD Sparkling Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsQTDSparkling__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions QTD Sparkling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsQTDStillTrend__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions QTD Still Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsQTDStill__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions QTD Still</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsYTDSparklingTrend__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions YTD Sparkling Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsYTDSparkling__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions YTD Sparkling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsYTDStillTrend__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions YTD Still Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransactionsYTDStill__c</fullName>
+        <description>SFA - ITR3 - Created By / Date : Thenmozhi Arasu  / 14/05/2015</description>
+        <externalId>false</externalId>
+        <label>Transactions YTD Still</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeMTDSparklingTrend__c</fullName>
+        <description>SFA - ITR3 - VolumeMTDSparklingTrend</description>
+        <externalId>false</externalId>
+        <label>Volume MTD Sparkling Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeMTDSparkling__c</fullName>
+        <description>SFA - ITR3 - VolumeMTDSparkling</description>
+        <externalId>false</externalId>
+        <label>Volume MTD Sparkling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeMTDStillTrend__c</fullName>
+        <description>SFA - ITR3 - Volume_MTD_Still_Trend</description>
+        <externalId>false</externalId>
+        <label>Volume MTD Still Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeMTDStill__c</fullName>
+        <description>SFA - ITR3 - VolumeMTDStill</description>
+        <externalId>false</externalId>
+        <label>Volume MTD Still</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeQTDSparklingTrend__c</fullName>
+        <description>SFA - ITR3 - VolumeQTDSparklingTrend</description>
+        <externalId>false</externalId>
+        <label>Volume QTD Sparkling Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeQTDSparkling__c</fullName>
+        <description>SFA - ITR3- VolumeQTDSparkling</description>
+        <externalId>false</externalId>
+        <label>Volume QTD Sparkling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeQTDStillTrend__c</fullName>
+        <description>SFA - ITR3 - VolumeQTDStillTrend</description>
+        <externalId>false</externalId>
+        <label>Volume QTD Still Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeQTDStill__c</fullName>
+        <description>SFA - ITR3- VolumeQTDStill</description>
+        <externalId>false</externalId>
+        <label>Volume QTD Still</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeYTDSparklingTrend__c</fullName>
+        <description>SFA - ITR3 - VolumeYTDSparklingTrend</description>
+        <externalId>false</externalId>
+        <label>Volume YTD Sparkling Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeYTDSparkling__c</fullName>
+        <description>SFA - ITR3 - VolumeYTDSparkling</description>
+        <externalId>false</externalId>
+        <label>Volume YTD Sparkling</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeYTDStillTrend__c</fullName>
+        <description>SFA - ITR3 - VolumeYTDStillTrend</description>
+        <externalId>false</externalId>
+        <label>Volume YTD Still Trend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VolumeYTDStill__c</fullName>
+        <description>SFA - ITR3 - VolumeYTDStill</description>
+        <externalId>false</externalId>
+        <label>Volume YTD Still</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Account Metrics</label>
+    <nameField>
+        <displayFormat>AM-{0000000}</displayFormat>
+        <label>Account Metrics Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Metrics</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
