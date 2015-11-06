@@ -18,7 +18,7 @@ for j in `ls $file1`; do
 					echo "welcome"
 					echo ' "$location"i \"$value"\ ' "$file2/$j"
                                 #sed -i ''"$location"'i ${value}' "$file2/$j"
-                               # sed -i ' "$location"i \"$value"\ ' "$file2/$j"
+                               sed -i '"$location"i \"$value"\' "$file2/$j"
                                echo $j
                 fi
 done
