@@ -13,16 +13,10 @@ for j in `ls $file1`; do
                                 echo $location
                                 #echo "line number  of file2 $location"
                                 sed -i '/<fields>/, /<\/fields>/ d ' "$file2/$j"
-                    value=`sed -n '/<fields/,/<\/fields/p' "$file1/$j"`
-					echo $value >> newobj.object
-					echo "welcome"
-					echo ' '$location'i \$value\ ' "$file2/$j"
-                                #sed -i ''$location'i ${value}' "$file2/$j"
-                         #      sed -i '37i \'$value'\' "$file2/$j"
-						 lineno=`expr $location + 0`
-						 
-						 sed -i ''$lineno'r newobj.object' "$file2/$j"
-						rm -rf newobj.object
+								value=`sed -n '/<fields/,/<\/fields/p' "$file1/$j"`
+								echo $value >> newobj.object
+								sed -i ''$location'r newobj.object' "$file2/$j"
+								rm -rf newobj.object
                                echo $j
                 fi
 done
