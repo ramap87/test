@@ -19,7 +19,9 @@ for j in `ls $file1`; do
 					echo ' '$location'i \$value\ ' "$file2/$j"
                                 #sed -i ''$location'i ${value}' "$file2/$j"
                          #      sed -i '37i \'$value'\' "$file2/$j"
-						 sed -i '37r newobj.object' "$file2/$j"
+						 lineno=`expr $location + 0`
+						 echo "welcoem $lineno"
+						 sed -i ''$lineno'r newobj.object' "$file2/$j"
 						rm -rf newobj.object
                                echo $j
                 fi
